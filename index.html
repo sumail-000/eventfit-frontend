@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Primary Meta -->
+        <title>
+            EventFit — Smart Outfit Recommendation for Pakistani Occasions
+        </title>
+        <meta
+            name="description"
+            content="EventFit is Pakistan's intelligent outfit recommendation platform. Tell us your event and city — we check live weather and suggest the perfect outfit for weddings, interviews, Eid, parties and more."
+        />
+        <meta
+            name="keywords"
+            content="Pakistani fashion, outfit recommendation, wedding outfit, interview dress, Eid outfit, StyleBuddy, weather-based fashion, shalwar kameez, sherwani, gharara"
+        />
+        <meta name="author" content="EventFit — University of Gujrat FYP" />
+        <meta name="theme-color" content="#07080F" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="EventFit — Smart Outfit Recommendation"
+        />
+        <meta
+            property="og:description"
+            content="Weather-aware, event-based outfit recommendations rooted in Pakistani fashion culture."
+        />
+        <meta
+            property="og:image"
+            content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80"
+        />
+        <meta property="og:url" content="https://eventfit.pk" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="EventFit — Smart Outfit Recommendation"
+        />
+        <meta
+            name="twitter:description"
+            content="Weather-aware outfit recommendations for Pakistani occasions."
+        />
+        <meta
+            name="twitter:image"
+            content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80"
+        />
+
+        <!-- Favicon (SVG scissors icon inline) -->
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23E8B84B'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='%2307080F'%3E✂%3C/text%3E%3C/svg%3E"
+        />
+
+        <!-- Google Fonts: Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Google Fonts: Load -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Preload hero image for LCP -->
+        <link
+            rel="preload"
+            as="image"
+            href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=85"
+        />
+
+        <!-- Base styles to prevent flash -->
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                scroll-behavior: smooth;
+                -webkit-font-smoothing: antialiased;
+            }
+            body {
+                background-color: #07080f;
+                color: #f8f3e6;
+                font-family: "Inter", system-ui, sans-serif;
+                overflow-x: hidden;
+            }
+            #root {
+                min-height: 100vh;
+            }
+
+            /* Page load fade-in */
+            #root {
+                animation: _appFade 0.4s ease forwards;
+            }
+            @keyframes _appFade {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
+</html>
